@@ -84,7 +84,6 @@
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'): 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-
 // let minutes = prompt('введіть число');
 // const hours = Math.floor(minutes / 60);
 // const hour = String(hours).padStart(2, '0');
@@ -93,6 +92,7 @@
 
 // alert(`${hour}:${min}`)
 // console.log(`${hour}:${min}`);
+
 
 // Завдання 5:
 // Напишіть код, який запитуватиме у користувача
@@ -163,6 +163,7 @@
 
 // console.log(getNumbers(0, 25));
 
+
 // Завдання 8:
 // Напишіть функцію min(a, b), яка приймає 2 числа і повертає меньше з них.
 // Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
@@ -177,3 +178,45 @@
 // }
 
 // console.log(min(153, 76));
+
+
+// Завдання 9:
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true, 
+// якщо параметр age більше чи дорівнює 18.
+// В іншому випадку вона запитує підтвердження через confirm 
+// і повертає його результат (true/false).
+
+// function isAdult(age) {
+//     if (age >= 18) {
+//         return true
+//     } else {
+//         return (confirm('Ви повнолітній?'));
+//     }
+// }
+
+// console.log(isAdult(17));
+// console.log(isAdult(19));
+
+
+// Завдання 10:
+// Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
+// Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
+// якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
+// якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
+
+// function fizzBuzz(num) {
+//     if (num % 3 === 0 && num % 5 === 0) {
+//         return 'fizzbuzz'
+//     } else if (num % 5 === 0) {
+//         return 'buzz'
+//     } else if (num % 3 === 0) {
+//         return 'fizz'
+//     } else {
+//         return num
+//     }
+// }
+
+// console.log(fizzBuzz(15));
+// console.log(fizzBuzz(9));
+// console.log(fizzBuzz(10));
+// console.log(fizzBuzz(7));

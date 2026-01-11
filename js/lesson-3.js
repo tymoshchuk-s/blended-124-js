@@ -426,7 +426,7 @@
 //     }
 // }
 
-// const employer = new Employee({
+// const employee = new Employee({
 //     name: 'Serhii',
 //     age: 32,
 //     gender: 'male',

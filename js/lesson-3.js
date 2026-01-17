@@ -435,6 +435,7 @@ class Employee extends Person {
     };
 };
 
+<<<<<<< HEAD
 const employer = new Employee({
     name: 'Serhii',
     age: 32,
@@ -443,6 +444,16 @@ const employer = new Employee({
     salary: 12000,
     department: 'Head Bartender'
 })
+=======
+// const employee = new Employee({
+//     name: 'Serhii',
+//     age: 32,
+//     gender: 'male',
+//     email: 'serhii.tymoshchuk@icloud.com',
+//     salary: 12000,
+//     department: 'Head Bartender'
+// })
+>>>>>>> b54a22d34e52577acac0210e49fded27cb305616
 
 console.log(employer.getDetails())
 console.log(employer.getEmployeeDetails())

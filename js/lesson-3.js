@@ -399,41 +399,50 @@
 // Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, 
 // який повертає об'єкт з зарплатою співробітника та відділом, в якому він працює.
 
-// class Person {
+class Person {
  
-//     constructor(obj) {
-//         this.name = obj.name;
-//         this.age = obj.age;
-//         this.gender = obj.gender;
-//         this.email = obj.email;
-//     }
+    constructor(obj) {
+        this.name = obj.name;
+        this.age = obj.age;
+        this.gender = obj.gender;
+        this.email = obj.email;
+    }
 
-//     getDetails() {
-//         return this;
-//     }
-// }
+    getDetails() {
+        return {
+            name: this.name,
+            age: this.age,
+            gender: this.gender,
+            email: this.email
+        };
+    };
+};
 
-// class Employee extends Person {
+class Employee extends Person {
 
-//     constructor(obj) {
-//         super(obj);
-//         this.salary = obj.salary;
-//         this.department = obj.department
-//     }
+    constructor(obj) {
+        super(obj);
+        this.salary = obj.salary;
+        this.department = obj.department
+    }
 
-//     getEmployeeDetails() {
-//         return this;
-//     }
-// }
+    getEmployeeDetails() {
+        return {
+            ...this.getDetails(),
+            salary: this.salary,
+            department: this.department
+        };
+    };
+};
 
-// const employer = new Employee({
-//     name: 'Serhii',
-//     age: 32,
-//     gender: 'male',
-//     email: 'serhii.tymoshchuk@icloud.com',
-//     salary: 12000,
-//     department: 'Head Bartender'
-// })
+const employer = new Employee({
+    name: 'Serhii',
+    age: 32,
+    gender: 'male',
+    email: 'serhii.tymoshchuk@icloud.com',
+    salary: 12000,
+    department: 'Head Bartender'
+})
 
-// console.log(employer.getDetails())
-// console.log(employer.getEmployeeDetails())
+console.log(employer.getDetails())
+console.log(employer.getEmployeeDetails())

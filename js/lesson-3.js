@@ -399,41 +399,41 @@
 // Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, 
 // який повертає об'єкт з зарплатою співробітника та відділом, в якому він працює.
 
-class Person {
+// class Person {
  
-    constructor(obj) {
-        this.name = obj.name;
-        this.age = obj.age;
-        this.gender = obj.gender;
-        this.email = obj.email;
-    }
+//     constructor(obj) {
+//         this.name = obj.name;
+//         this.age = obj.age;
+//         this.gender = obj.gender;
+//         this.email = obj.email;
+//     }
 
-    getDetails() {
-        return {
-            name: this.name,
-            age: this.age,
-            gender: this.gender,
-            email: this.email
-        };
-    };
-};
+//     getDetails() {
+//         return {
+//             name: this.name,
+//             age: this.age,
+//             gender: this.gender,
+//             email: this.email
+//         };
+//     };
+// };
 
-class Employee extends Person {
+// class Employee extends Person {
 
-    constructor(obj) {
-        super(obj);
-        this.salary = obj.salary;
-        this.department = obj.department
-    }
+//     constructor(obj) {
+//         super(obj);
+//         this.salary = obj.salary;
+//         this.department = obj.department
+//     }
 
-    getEmployeeDetails() {
-        return {
-            ...this.getDetails(),
-            salary: this.salary,
-            department: this.department
-        };
-    };
-};
+//     getEmployeeDetails() {
+//         return {
+//             ...this.getDetails(),
+//             salary: this.salary,
+//             department: this.department
+//         };
+//     };
+// };
 
 // const employee = new Employee({
 //     name: 'Serhii',
@@ -444,5 +444,5 @@ class Employee extends Person {
 //     department: 'Head Bartender'
 // })
 
-console.log(employer.getDetails())
-console.log(employer.getEmployeeDetails())
+// console.log(employer.getDetails())
+// console.log(employer.getEmployeeDetails())
